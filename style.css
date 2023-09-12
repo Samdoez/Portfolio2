@@ -1,0 +1,357 @@
+@font-face {/*This is used to add a customfont to the default list of fonts in VScode library.... i got to learn about this 
+    bcoz i coudnt add it it through google font link, bcoz they didnt have it, so i had to download the font*/
+    font-family: Brittany; /*This tells us that this is name of the font*/
+    src: url(BrittanySignature.ttf); /*This links us to the font file if we have downloaded it*/
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.centralize{/*This centralizing an item*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-centralize{
+    display: flex;
+    align-items: center;
+}
+.both-container{ /* div containing both the top nav and the main content */
+    background-image: url(home-bg.png);
+    background-size: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-rows: 31vh 69vh; /*spliting the top nav and the main content*/
+    grid-template-columns: 100%;
+
+}
+.top-bar{
+    backgroud-color: yellow;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 69% 6% 6% 6% 6% 3%; /*content in the top nav... they are all inside the 32% */
+    grid-template-rows: 100%;
+    gap: 1%;
+}
+.col1{
+    padding: 40px;
+    color: #004AAD;
+}
+.col-nxt{
+    color: #004AAD;
+}
+.blk{
+    color: black;
+}
+.me-cont{ /*dive containing the main content*/
+    backgrond-color: rgb(247, 17, 139);
+    display: grid;
+    grid-template-rows: 16% 17% 25% 22% 13% 7%;
+    grid-template-columns: 21% 3% 11% 6% 21% 12% 13% 2% 7% 0.5% 3.5% ;
+}
+.brd{
+    border: 5px dashed black;
+    grid-area: 1/1/7/2; /*row start/columnstart/row end / column end*/
+    z-index: 1;
+}
+.space-layer1{
+    backgroud-color: blueviolet;
+    grid-area: 1/2/2/12;
+}
+.my-name{
+    backgrond-color: rgb(43, 202, 226);
+    grid-area: 2/5/3/6;
+    font-family: Brittany;
+    font-size: 4.5rem;
+    color: #004AAD;
+}
+.samuel{
+    background-color: #004AAD;
+    grid-area: 3/1/4/5;
+    font-size: 6rem;
+    color: #ffffff;
+    padding-right: 20px;
+    justify-content: end;
+    font-weight: 800;
+}
+.samuel1{
+    background-color: #f56a1f;
+    grid-area: 3/5/4/6;
+    font-size: 6rem;
+    color: #ffffff;
+    padding-right: 20px;
+    justify-content: end;
+    font-weight: 800;
+    position: relative;
+    animation-name: longdiv;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes longdiv {
+    0%{
+        background-color: #f56a1f;
+        grid-area: 6/5/7/6;
+    }
+    100%{
+        background-color: #004AAD;
+        grid-area: 3/5/4/6;
+    }
+}
+.itoje{
+    grid-area: 3/6/4/8;
+    font-size: 6rem;
+    color: #004AAD;
+    justify-content: end;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.full-stck{
+    grid-area: 4/4/5/7;
+    font-family: Brittany;
+    font-size: 3.3rem;
+    color: #004AAD;
+}
+.space-layer2{
+    backgroud-color: blueviolet;
+    grid-area: 5/2/6/12;
+}
+.blue-rect1{
+    background-color: #004AAD;
+    grid-area: 6/9/7/10;
+}
+.black-rect1{
+    background-color: black;
+    grid-area: 6/11/7/12;
+}
+
+/*Profile css style code*/
+.profile{
+    height: 90vh;
+    background-color: #e2ecfa;
+    display: grid;
+    grid-template-rows: 8% 5% 7% 15% 6% 20% 5% 18% 8% 8%;
+    grid-template-columns: 4% 5% 18% 3% 18% 14% 6% 17% 2% 2% 3% 8% ;
+}
+.p-blue-rect1{
+    background-color: #004AAD;
+    grid-area: 1/1/4/2;
+}
+.p-space-layer1{
+    backgrond-color: blueviolet;
+    grid-area: 1/2/2/12;
+}
+.p-my{
+    backgroud-color: rgb(43, 202, 226);
+    grid-area: 3/3/4/4;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #004AAD;
+}
+.p-icon{
+    grid-area: 3/4/4/5;
+}
+.p-profile{
+    backgound-color: #004AAD;
+    grid-area: 4/3/5/5;
+    font-size: 4.5rem;
+    justify-content: start;
+    color: #004AAD;
+    font-weight: bolder;
+}
+.profile-img{
+    background-color: rgb(43, 202, 226);
+    grid-area: 3/7/7/9;
+    color: #ffffff;
+    font-weight: 800;
+    z-index: 1;
+}
+.profile-outline{
+    border: 5px dashed black;
+    grid-area: 4/8/8/11;
+    color: #ffffff;
+    font-weight: 800;
+}
+.p-text{
+    background-color:  #004AAD;
+    grid-area: 6/3/10/6;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 25px;
+}
+.p-blue-rect2{
+    background-color: #004AAD;
+    grid-area: 9/10/11/12;
+}
+.read-more{
+    background-color: #f56a1f;
+    width: 140px;
+    position: relative;
+    left: 415px;
+}
+
+/*skills css style code*/
+.s-cont{
+    height: 90vh;
+    width: 100%;
+    background:url(skills\ -bg.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 100% ;
+    grid-template-columns: 30% 70% ;
+}
+.skills{
+    height: 90vh;
+    background-clor: yellow;
+    display: grid;
+    grid-template-rows: 9% 6% 25% 6% 54% ;
+    grid-template-columns: 15% 8% 41% 8% 27% ;
+}
+.s-outer-blue{
+    background-color: rgb(127, 240, 255);
+    grid-area: 2/2/5/5;
+    border-radius: 50%;
+}
+.s-inner-blue{
+    background-color: #004AAD;
+    color: white;
+    display: flex;
+    font-weight: 800;
+    font-size: 2.3rem;
+    grid-area: 3/3/4/4;
+    border-radius: 50%;
+}
+.s-details{
+    height: 90vh;
+    bacground-color: red;
+    display: grid;
+    grid-template-rows: 10% 17% 3% 15% 10% 17% 3% 15% 10%;
+    grid-template-columns: 8% 41% 3% 38% 20% ;
+}
+.s-img{
+    background-color: #004AAD;
+    grid-area: 2/2/5/3;
+}
+.s-img1{
+    background-color: #004AAD;
+    grid-area: 6/2/9/3;
+}
+.s-headin{
+    color: #004AAD;
+    grid-area: 2/4/3/5;
+    font-size: 28px;
+    font-weight: bolder;
+    justify-content: start;
+    align-items: end;
+}
+.s-headin1{
+    color: #004AAD;
+    grid-area: 6/4/7/5;
+    font-size: 28px;
+    font-weight: bolder;
+    justify-content: start;
+    align-items: end;
+}
+.s-text{
+    grid-area: 4/4/5/5;
+}
+.s-text1{
+    grid-area: 8/4/9/5;
+}
+
+/*CSS style for the Contact us page*/
+.Contact-us{
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 23% 19% 19% 19% 8% 12%; 
+    grid-template-columns: 7% 53% 10% 22% 8%;
+}
+.c-blue-rect1{
+    background-color: #004AAD;
+    grid-area: 1/1/7/4;
+}
+.c-blue-layer1{
+    background-color: rgb(43, 202, 226);
+    grid-area: 3/3/6/5;
+}
+.cont-text{
+    grid-area: 2/4/3/5;
+    font-size: 3.2rem;
+    justify-content: end;
+    color: #004AAD;
+    font-weight: bolder;   
+}
+.c-media{
+    grid-area: 2/2/3/3;
+    font-size: 24px;
+    color: white;
+}
+.c1{
+    grid-area: 3/2/4/3;
+}
+.c2{
+    grid-area: 4/2/5/3;
+}
+.bt{
+    margin-bottom: 0px;
+}
+.pt{
+    margin-top: 0px;
+    color: rgb(43, 202, 226);
+}
+.footer{
+    background-color: rgb(43, 202, 226);
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 100% ;
+    grid-template-columns: 25% 75% ;
+}
+.logo{
+    display: grid;
+    grid-template-rows: 10% 20% 60% 5% 5%;
+    grid-template-columns: 25% 50% 25%;
+}
+.l-name{
+    font-size: 26px;
+    font-weight: bolder;
+    grid-area: 2/2/3/3;
+    color: #004AAD;
+}
+.l-text{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+.f-blue-layer{
+    grid-area: 3/2/4/3;
+    background-color: #004AAD;
+}
+.f-blue-layer2{
+    grid-area: 5/2/6/3;
+    background-color: #004AAD;
+}
+.links{
+    display: grid;
+    grid-template-rows: 10% 35% 10% 35% 10%;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+}
+.f-sect{
+    color: #004AAD;
+    font-size: 20px;
+    grid-area: 2/2/3/3;
+}
+.n1{
+    grid-area: 2/4/3/5;
+}
+.n2{
+    grid-area: 4/2/5/3;
+}
+.n3{
+    grid-area: 4/4/5/5;
+}
